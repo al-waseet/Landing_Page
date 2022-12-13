@@ -1,0 +1,89 @@
+.Announcement_Page
+{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: #F5B8D3;
+	background-image: radial-gradient(farthest-corner at bottom left, #90DDF5, transparent 50%), radial-gradient(farthest-corner at bottom right, #8068A8, transparent 50%);
+	height: 100vh;
+	color: #383838;
+	text-align: center;
+	gap: 2rem;
+}
+
+.Announcement_Banner
+{
+	width: 50%;
+}
+
+.Announcement_Page > h1
+{
+	padding-top: 1rem;
+	font-size: 4rem;
+}
+
+.Announcement_Page > h2
+{
+	padding-top: 1rem;
+	font-size: 3rem;
+}
+
+.Announcement_Page > p
+{
+	padding-top: 1rem;
+}
+
+.Home_Page_URL
+{
+	font-size: 2rem;
+}
+
+.Home_Page_URL:link
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.Home_Page_URL:visited
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.Home_Page_URL:hover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.Home_Page_URL:active
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 640px)
+{
+	.Announcement_Banner
+	{
+		width: 75%;
+	}
+
+	.Announcement_Page > h1
+	{
+		font-size: 2rem;
+	}
+
+	.Announcement_Page > h2
+	{
+		font-size: 2rem;
+	}
+
+	.Home_Page_URL
+	{
+		font-size: 1rem;
+	}
+}

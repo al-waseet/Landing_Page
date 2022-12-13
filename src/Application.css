@@ -1,0 +1,32 @@
+*
+{
+	font-family: "Roboto", sans-serif;
+}
+
+body
+{
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	line-height: 1.5;
+}
+
+.Component_Padding
+{
+	padding-top: 2rem;
+}
+
+.Component_Margin
+{
+	margin-top: 2rem;
+}
+
+.Component_Fitness_to_Flexbox
+{
+    align-self: stretch;
+}

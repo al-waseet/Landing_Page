@@ -1,0 +1,63 @@
+.Card
+{
+	background-color: transparent;
+	border: 3px solid #3A3A3A;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.Flipped_Card
+{
+    transform: rotateY(180deg);
+}
+
+.Hidden_Card
+{
+    display: none;
+}
+
+@keyframes Animate_Thumb
+{
+	from
+	{
+		opacity: 0;
+	}
+	to
+	{
+		opacity: 1;
+	}
+}
+
+.Card:active
+{
+	opacity: 0.5;
+}
+
+.Card_Content
+{
+	color: #3A3A3A;
+}
+
+.Plan_Name
+{
+	padding-bottom: 2rem;
+}
+
+.Plan_Price
+{
+	padding-bottom: 1rem;
+}
+
+.Plan_Description
+{
+	padding-bottom: 2rem;
+}

@@ -1,0 +1,429 @@
+.Hero_Banner
+{
+	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url('../../Images/Landing_Page_Hero_Image.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 1fr 1fr 1fr;
+	color: white;
+	grid-template-areas: ". . ." ". Hero_Banner_Text ." ". Hero_Banner_Image_Credit .";
+}
+
+.Hero_Banner_Text
+{
+	color: inherit;
+	grid-area: Hero_Banner_Text;
+	place-self: center;
+	line-height: 1.2;
+}
+
+.Hero_Banner_Tagline
+{
+	color: inherit;
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 1.2;
+}
+
+.Hero_Banner_Description
+{
+	color: inherit;
+	padding-top: 1rem;
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.Hero_Banner_Image_Credit
+{
+	color: inherit;
+	grid-area: Hero_Banner_Image_Credit;
+	align-self: end;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.Image_Credit_URL:link
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
+.Image_Credit_URL:visited
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
+.Image_Credit_URL:hover
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
+.Image_Credit_URL:active
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
+.Services
+{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	color: #383838;
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.Services_Text_Container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Services_Text_Container > h1
+{
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.Services_Text_Container > p
+{
+	padding-top: 2rem;
+}
+
+.Benefits
+{
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.Benefit
+{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+}
+
+.Services_Applications
+{
+	padding-top: 2rem;
+}
+
+.Dashboard_Section > p
+{
+	padding-top: 1rem;
+}
+
+.Dashboard_Mockup
+{
+	padding-top: 2rem;
+	max-width: 100%;
+}
+
+.Menu_Section
+{
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem
+}
+
+.Menu_Section_Column > p:first-of-type
+{
+	padding-top: 1rem;
+}
+
+.Menu_Mockup
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.Menu_QR_Code
+{
+	margin-top: 4rem;
+	padding: 1rem;
+	border: 2px solid #383838;
+	border-radius: 1rem;
+	max-width: 80%;
+	height: auto;
+}
+
+.Invitation_to_Scan
+{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1rem;
+	font-size: 1.25rem;
+}
+
+.Plans
+{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr;
+	color: #3A3A3A;
+	padding-top: 2rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.Plans_Header
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Time_Period_Selector
+{
+	border: 3px solid #3A3A3A;
+	margin-top: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 3rem;
+}
+
+.Monthly_Selector
+{
+	cursor: pointer;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-right: 1px solid #3A3A3A;
+	padding-top: 0.54rem;
+	padding-bottom: 0.54rem;
+}
+
+.Active_Monthly_Selector
+{
+	animation-name: Appearance;
+	animation-duration: 750ms;
+	animation-fill-mode: backwards;
+	background-color: white;
+	font-weight: bold;
+	border-top-left-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+}
+
+.Annual_Selector
+{
+	cursor: pointer;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-left: 1px solid #3A3A3A;
+	padding-top: 0.54rem;
+	padding-bottom: 0.54rem;
+}
+
+.Active_Annual_Selector
+{
+	animation-name: Appearance;
+	animation-duration: 750ms;
+	animation-fill-mode: backwards;
+	background-color: white;
+	font-weight: bold;
+	border-top-right-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+}
+
+@keyframes Appearance
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 0.5;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+.Plans_Header > h1
+{
+	padding-top: 2rem;
+}
+
+.Plans_Grid
+{
+	padding-top: 4rem;
+}
+
+.Team
+{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr;
+	color: #212121;
+	padding-top: 2rem;
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.Team > h1
+{
+	justify-self: center;
+}
+
+.Team_Grid
+{
+	padding-top: 2rem;
+}
+
+.Contact_Us
+{
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 8rem;
+	padding-right: 8rem;
+	padding-bottom: 2rem
+}
+
+.Contact_Us > h1
+{
+	justify-self: center;
+}
+
+.Main_Section
+{
+	background: linear-gradient(#F5B8D3 0%, #90DDF5 50%, #8068A8 100%);
+}
+
+.Card_Flipping_Container
+{
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.Card_Flip
+{
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+@media screen and (max-width: 768px) 
+{
+	.Services
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.Plans
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.Team
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.Contact_Us
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media screen and (min-width: 768px) 
+{
+	.Services
+	{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.Plans
+	{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.Team
+	{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.Contact_Us
+	{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+@media only screen and (min-width: 992px)
+{
+	.Services
+	{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+
+	.Plans
+	{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+
+	.Team
+	{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+
+	.Contact_Us
+	{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+}
+
+@media only screen and (min-width: 1200px)
+{
+	.Services
+	{
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+
+	.Plans
+	{
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+
+	.Team
+	{
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+
+	.Contact_Us
+	{
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+}

@@ -1,0 +1,172 @@
+{
+	"Card_1_Description":
+	{
+		"en-US": "For small restaurant chains",
+		"ru": "Для маленьких ресторанных сетей"
+	},
+	"Card_2_Description":
+	{
+		"en-US": "For medium restaurant chains",
+		"ru": "Для средних ресторанных сетей"
+	},
+	"Card_3_Description":
+	{
+		"en-US": "For large restaurant chains",
+		"ru": "Для больших ресторанных сетей"
+	},
+	"Card_4_Description":
+	{
+		"en-US": "For enterprises",
+		"ru": "Для предприятий"
+	},
+	"Card_5_Description":
+	{
+		"en-US": "Custom-tailored solution for your business needs",
+		"ru": "Индивидульное решение для нужд вашего бизнеса"
+	},
+	"Card_1_Name":
+	{
+		"en-US": "Starter",
+		"ru": "Закуска"
+	},
+	"Card_2_Name":
+	{
+		"en-US": "Main Dish",
+		"ru": "Главное Блюдо"
+	},
+	"Card_3_Name":
+	{
+		"en-US": "Full Course",
+		"ru": "Ужин"
+	},
+	"Card_4_Name":
+	{
+		"en-US": "Buffet",
+		"ru": "Буфет"
+	},
+	"Card_5_Name":
+	{
+		"en-US": "Feast",
+		"ru": "Пир"
+	},
+    "Card_1_Monthly_Price":
+	{
+		"en-US": "49 AED / month",
+		"ru": "49 дирхамов ОАЭ / месяц"
+	},
+	"Card_2_Monthly_Price":
+	{
+		"en-US": "74 AED / month",
+		"ru": "74 дирхама ОАЭ / месяц"
+	},
+	"Card_3_Monthly_Price":
+	{
+		"en-US": "99 AED / month",
+		"ru": "99 дирхамов ОАЭ / месяц"
+	},
+    "Card_1_Annual_Price":
+	{
+		"en-US": "44 AED / month",
+		"ru": "44 дирхама ОАЭ / месяц"
+	},
+	"Card_2_Annual_Price":
+	{
+		"en-US": "69 AED / month",
+		"ru": "69 дирхамов ОАЭ / месяц"
+	},
+	"Card_3_Annual_Price":
+	{
+		"en-US": "94 AED / month",
+		"ru": "94 дирхама ОАЭ / месяц"
+	},
+	"Founder_1_Name":
+	{
+		"en-US": "Lev Rassudov",
+		"ru": "Рассудов Лев"
+	},
+	"Founder_2_Name":
+	{
+		"en-US": "German Shein",
+		"ru": "Шеин Герман"
+	},
+	"Founder_3_Name":
+	{
+		"en-US": "Hashim Noor",
+		"ru": "Нур Хашим"
+	},
+	"Founder_1_Photo_Alternative":
+	{
+		"en-US": "A bald white man with glasses, dressed in a black suit jacket, leaning into chair and smiling.",
+		"ru": "Лысый белый мужчина в очках, одетый в чёрный пиджак, опирающийся на стул и улыбающийся."
+	},
+	"Founder_2_Photo_Alternative":
+	{
+		"en-US": "A white man with a shaved left side of the head and long hair on the right side, dressed in a black shirt with a dark gray tie, arms crossed and smiling brightly.",
+		"ru": "Белый мужчина с выбритой левой стороны головы и длинными волосами на правой стороне головы, одетый в чёрную рубашку с тёмно-серым галстуком, держащий руки скрещенными и широко улыбающийся."
+	},
+	"Founder_3_Photo_Alternative":
+	{
+		"en-US": "TEMP TEXT",
+		"ru": "Заглушка"
+	},
+	"Founder_1_Position":
+	{
+		"en-US": "CEO, Co-Founder",
+		"ru": "Исполнительный директор, Основатель, Специалист по связи с общественностью"
+	},
+	"Founder_2_Position":
+	{
+		"en-US": "CTO, Co-Founder, Developer, Designer",
+		"ru": "Технический директор, Со-основатель, Разработчик, Дизайнер"
+	},
+	"Founder_3_Position":
+	{
+		"en-US": "Co-Founder, Sales Director",
+		"ru": "Менеджер по продажам, Архитектор"
+	},
+	"Founder_1_Biography":
+	{
+		"en-US": "Lev Rassudov is an American University in Dubai graduate, with degree in Civil Engineering. Having worked in Wurth Group, an international company focusing on wholesale of construction materials, Lev had a chance to work on many landmark projects, such as EXPO 2020. This is where he found passion in business development and operations management, and desire for  building outstanding customer centric products.",
+		"ru": "Заглушка"
+	},
+	"Founder_2_Biography":
+	{
+		"en-US": "German Shein graduated from the American University of Sharjah, UAE in 2017 with a Bachelor of Science in Computer Engineering with a minor in Psychology. He worked in the IBM from 2017 to 2020 as a Full Stack Developer on an e-learning platform. From 2020 to 2022, he attended the University of Bern, Switzerland, as a student of the Master of Science in Biomedical Engineering.",
+		"ru": "Шеин Герман выпустился из Американского Университета Шарджи в ОАЭ в 2017 году, со степенью бакалавра по Компьютерной Инженерии и второй специальностью по Психологии. Он работал в IBM с 2017 по 2020 год в качестве разработчика полного cтека онлайн образовательной платформы. С 2020 по 2022 год, посещал Бернский Университет в Швейцарии в качестве студента магистратуры по специальности Биомедицинская Инженерия."
+	},
+	"Founder_3_Biography":
+	{
+		"en-US": "Hashim Noor graduated with a degree in Computer Science from the American University of Sharjah and worked as a Product Owner at IBM for 5 years. Hashim is passionate about building tech products that enable organizations to solve their business challenges",
+		"ru": "Заглушка"
+	},
+	"Purchase_Button_Text_1":
+	{
+		"en-US": "Purchase now",
+		"ru": "Купить"
+	},
+	"Purchase_Button_Text_2":
+	{
+		"en-US": "Calculate costs",
+		"ru": "Рассчитать цену"
+	},
+	"Purchase_Button_Text_3":
+	{
+		"en-US": "Contact sales",
+		"ru": "Связаться с отделом продаж"
+	},
+	"Tagline":
+	{
+		"en-US": "Dine-in Redefined",
+		"ru": "Изобретаем Рестораны Заново"
+	},
+	"Team_Section_Header":
+	{
+		"en-US": "Meet the Team",
+		"ru": "Наша Команда"
+	},
+    "Contact_Us_Section_Header":
+	{
+		"en-US": "Contact Us",
+		"ru": "Свяжитесь с Нами"
+	}
+}
