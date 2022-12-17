@@ -12,12 +12,11 @@ import Grid from '../../Components/Grid/Grid';
 import Header from '../../Components/Header/Header';
 import './Landing.css';
 import Menu_Mockup from '../../Images/Menu_Mockup.png';
-//import Menu_QR_Code from '../../Images/Menu_QR_Code.png';
 import Phone_Number_Input_Field from '../../Components/Phone_Number_Input_Field/Phone_Number_Input_Field';
 import Photo_of_Hashim_Noor from '../../Images/Hashim_Noor.jpg';
 import Photo_of_Lev_Rassudov from '../../Images/Lev_Rassudov.jpg';
 import Photo_of_German_Shein from '../../Images/German_Shein.jpg';
-import Temporary_QR_Code from '../../Images/Temporary_QR_Code.png';
+import QR_Code from '../../Components/QR_Code/QR_Code';
 import Text_Area from '../../Components/Text_Area/Text_Area';
 import Text_Input_Field from '../../Components/Text_Input_Field/Text_Input_Field'
 import { useRef, useState } from 'react';
@@ -104,7 +103,7 @@ const Landing = () =>
 								<div className='Menu_Section_Column'>
 									<h2>Mobile Menu & Ordering</h2>
 									<p>Your customers can scan a QR code, like the one below, and order food straight to their table!</p>
-									<img className='Menu_QR_Code' src={Temporary_QR_Code}></img>
+									<QR_Code Restaurant={{Restaurant_ID: '638de2c86c763fe989266e84', Table_ID: 'b50af576-f239-11ec-b939-0242ac120002'}}></QR_Code>
 									<p className='Invitation_to_Scan'>Scan to View the Demo</p>
 								</div>
 								<img className='Menu_Mockup' src={Menu_Mockup}></img>
