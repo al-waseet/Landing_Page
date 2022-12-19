@@ -1,6 +1,7 @@
 {
 	"name": "al-waseet-landing-page",
 	"version": "1.0.0",
+	"homepage": ".",
 	"private": true,
 	"dependencies": {
 		"qrcode": "^1.5.1",
