@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.27fb8022.css",
-    "main.js": "/static/js/main.ddd71e3a.js",
+    "main.js": "/static/js/main.77a439f1.js",
     "static/media/Landing_Page_Hero_Image.jpg": "/static/media/Landing_Page_Hero_Image.e1f3e27cc9e2252a810f.jpg",
     "static/media/Dashboard_Mockup.png": "/static/media/Dashboard_Mockup.9c1cbd798c3854ec8fda.png",
     "static/media/Not_Found_Page_Background_Photo_Left_Alignment.jpg": "/static/media/Not_Found_Page_Background_Photo_Left_Alignment.7cc0afaa6106517cb656.jpg",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.27fb8022.css",
-    "static/js/main.ddd71e3a.js"
+    "static/js/main.77a439f1.js"
   ]
 }
