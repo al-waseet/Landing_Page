@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"homepage": ".",
 	"private": true,
+    "homepage": "/",
 	"dependencies": {
 		"qrcode": "^1.5.1",
 		"react": "^18.2.0",

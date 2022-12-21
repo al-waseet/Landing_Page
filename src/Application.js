@@ -5,7 +5,7 @@ import Landing from './Pages/Landing/Landing';
 import Not_Found from './Pages/Not_Found/Not_Found';
 
 const Application = () => (
-	<Router key='Router_Key'>
+	<Router basename='/' key='Router_Key'>
 		<Routes key='Routes_Key'>
             <Route key='Announcement_Page_Route_Key' path='/announcement' element={<Announcement />} />
 			<Route key='Landing_Page_Route_Key' path='/' element={<Landing />} />
