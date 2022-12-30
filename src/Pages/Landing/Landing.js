@@ -106,8 +106,17 @@ const Landing = () =>
 									<QR_Code Restaurant={{Restaurant_ID: '638de2c86c763fe989266e84', Table_ID: 'b50af576-f239-11ec-b939-0242ac120002'}}></QR_Code>
 									<p className='Invitation_to_Scan'>Scan to View the Demo</p>
 								</div>
-								<img className='Menu_Mockup' src={Menu_Mockup}></img>
+                                <div className='Menu_Mockup_Container'>
+                                    <img className='Menu_Mockup' src={Menu_Mockup}></img>
+                                </div>
 							</div>
+                            <div className='Mobile_Menu_Section'>
+                                <h2>Mobile Menu & Ordering</h2>
+                                <p>Your customers can scan a QR code, like the one below, and order food straight to their table!</p>
+                                <img className='Menu_Mockup' src={Menu_Mockup}></img>
+                                <QR_Code Restaurant={{Restaurant_ID: '638de2c86c763fe989266e84', Table_ID: 'b50af576-f239-11ec-b939-0242ac120002'}}></QR_Code>
+                                <p className='Invitation_to_Scan'>Scan to View the Demo</p>
+                            </div>
 						</Grid>
 					</div>
 				</div>
@@ -144,13 +153,11 @@ const Landing = () =>
 				</div>
 				<div className='Contact_Us' ref={Contact_Us_Reference}>
 					<h1>{Content.Contact_Us_Section_Header [Language]}</h1>
-					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='350px'>
+					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='600px'>
 						<Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
 						<Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
 						<Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
 						<Text_Input_Field Function={(Event) => Set_Restaurant (Event.target.value)} Label='Restaurant' Value={Restaurant}></Text_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_City (Event.target.value)} Label='City' Value={City}></Text_Input_Field>
-						<Dropdown_Menu Function={(Event) => Set_Emirate (Event.target.value)} Label='Emirate' Options={['Abu Dhabi', 'Ajman', 'Dubai', 'Fujairah', 'Ras Al Khaimah', 'Sharjah', 'Umm Al Quwain']} Value={Emirate}></Dropdown_Menu>
 					</Grid>
 					<Text_Area Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Function={(Event) => Set_Message (Event.target.value)} Label='Message' Value={Message}></Text_Area>
 					<Button Color='#050505' Classes={['Component_Margin']} Function={Send_an_Email} Text='Send a Message' Text_Color='#FFFFFF'></Button>
