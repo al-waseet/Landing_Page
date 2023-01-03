@@ -10,7 +10,7 @@ const Header = ({Language, Language_Setting_Function, References}) =>
 {
 	const [Hamburger_Menu_Display_Status, Set_Hamburger_Menu_Display_Status] = useState (false);
 	const Scroll_to_the_Section = Index => window.scrollTo ({top: References [Index].current.offsetTop, behavior: "smooth"});
-	
+  
     return (
 		<>
 			<header key='Header_Key'>
