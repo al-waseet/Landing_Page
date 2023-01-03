@@ -151,7 +151,7 @@ const Landing = () =>
 				</div>
 				<div className='Contact_Us' ref={Contact_Us_Reference}>
 					<h1>{Content.Contact_Us_Section_Header [Language]}</h1>
-					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='600px'>
+					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='300px'>
 						<Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
 						<Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
 						<Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
