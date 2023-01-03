@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.27fb8022.css",
-    "main.js": "/static/js/main.77a439f1.js",
+    "main.css": "/static/css/main.5360a200.css",
+    "main.js": "/static/js/main.7f077a0b.js",
     "static/media/Landing_Page_Hero_Image.jpg": "/static/media/Landing_Page_Hero_Image.e1f3e27cc9e2252a810f.jpg",
     "static/media/Dashboard_Mockup.png": "/static/media/Dashboard_Mockup.9c1cbd798c3854ec8fda.png",
     "static/media/Not_Found_Page_Background_Photo_Left_Alignment.jpg": "/static/media/Not_Found_Page_Background_Photo_Left_Alignment.7cc0afaa6106517cb656.jpg",
@@ -10,16 +10,16 @@
     "static/media/Menu_Mockup.png": "/static/media/Menu_Mockup.40c2adc5314f73bc128b.png",
     "static/media/Hashim_Noor.jpg": "/static/media/Hashim_Noor.1f6cbf11752529c17af6.jpg",
     "static/media/al_waseet_Banner.svg": "/static/media/al_waseet_Banner.ce1033973f0e1cc0ccc2ba8bc323d740.svg",
-    "static/media/al_waseet_White_Banner.svg": "/static/media/al_waseet_White_Banner.a83cfe588ca02f1cc1ac11f869ff4087.svg",
-    "static/media/Instagram_Icon.svg": "/static/media/Instagram_Icon.56ae152a67420dd02b18128149059e0c.svg",
-    "static/media/LinkedIn_Icon.svg": "/static/media/LinkedIn_Icon.438817d7a73d8b72b228fb87583c515a.svg",
+    "static/media/al_waseet_White_Banner.svg": "/static/media/al_waseet_White_Banner.cfa45c3538399d2067764e95175017eb.svg",
+    "static/media/Instagram_Icon.svg": "/static/media/Instagram_Icon.fa8b0b86d8af5ff429ffe37e74a134e9.svg",
+    "static/media/LinkedIn_Icon.svg": "/static/media/LinkedIn_Icon.51d6eee673cb859aaa2df5809d00785f.svg",
     "index.html": "/index.html",
-    "static/media/Back_Icon.svg": "/static/media/Back_Icon.584ddc58ef277f5b914f4219ac2176ac.svg",
-    "static/media/Hamburger_Icon.svg": "/static/media/Hamburger_Icon.3d8a53044972a2f6c88a05465473279d.svg",
+    "static/media/Back_Icon.svg": "/static/media/Back_Icon.0e3c982b78ea62e352b90b3de3e26404.svg",
+    "static/media/Hamburger_Icon.svg": "/static/media/Hamburger_Icon.31ac6f13108943c90cd9022edd9a406e.svg",
     "static/media/Checkmark.svg": "/static/media/Checkmark.54ec747c9f7a0c77eabda2f7d2b43083.svg"
   },
   "entrypoints": [
-    "static/css/main.27fb8022.css",
-    "static/js/main.77a439f1.js"
+    "static/css/main.5360a200.css",
+    "static/js/main.7f077a0b.js"
   ]
 }
