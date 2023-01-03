@@ -5,7 +5,6 @@ import Button from '../../Components/Button/Button';
 import {ReactComponent as Checkmark} from '../../Images/Checkmark.svg';
 import Content from './Landing.json';
 import Dashboard_Mockup from '../../Images/Dashboard_Mockup.png';
-import Dropdown_Menu from '../../Components/Dropdown_Menu/Dropdown_Menu';
 import Floating_Action_Button from '../../Components/Floating_Action_Button/Floating_Action_Button';
 import Footer from '../../Components/Footer/Footer';
 import Grid from '../../Components/Grid/Grid';
@@ -23,12 +22,11 @@ import { useRef, useState } from 'react';
 
 const Landing = () =>
 {
-	const Vision_Reference = useRef ();
 	const Services_Reference = useRef ();
 	//const Plans_Reference = useRef ();
 	const Team_Reference = useRef ();
 	const Contact_Us_Reference = useRef ();
-
+	
 	//const [Active_Plan, Set_Active_Plan] = useState ('Monthly');
 	//const [Enterprise_Plan_Calculation_Status, Set_Enterprise_Plan_Calculation_Status] = useState (false);
 	const [Language, Set_Language] = useState ('en-US');
@@ -42,28 +40,29 @@ const Landing = () =>
 	const [Emirate, Set_Emirate] = useState ('');
 	const [Message, Set_Message] = useState ('');
 
-    const [Email_Sent_Status, Set_Email_Sent_Status] = useState (false); 
+	const [Email_Sent_Status, Set_Email_Sent_Status] = useState (false); 
 
-    const Send_an_Email = () =>
-    {
-        API.Send_an_Email ({Name, Email, Phone_Number: Phone_Number_Code + Phone_Number, Restaurant, City, Emirate, Message});
-        Set_Email_Sent_Status (true);
-        Set_Name ('');
-        Set_Email ('');
-        Set_Phone_Number_Code ('+971');
-        Set_Phone_Number ('');
-        Set_Restaurant ('');
-        Set_City ('');
-        Set_Emirate ('');
-        Set_Message ('');
-    }
+	const Send_an_Email = () =>
+	{
+		API.Send_an_Email ({Name, Email, Phone_Number: Phone_Number_Code + Phone_Number, Restaurant, City, Emirate, Message});
+		Set_Email_Sent_Status (true);
+		Set_Name ('');
+		Set_Email ('');
+		Set_Phone_Number_Code ('+971');
+		Set_Phone_Number ('');
+		Set_Restaurant ('');
+		Set_City ('');
+		Set_Emirate ('');
+		Set_Message ('');
+        setTimeout (() => Set_Email_Sent_Status (false), 5000)
+	}
 
 	//const Toggle_Enterprise_Card = () => Set_Enterprise_Plan_Calculation_Status (!Enterprise_Plan_Calculation_Status);
-	
+
 	return (
 		<>
-			<Header Language={Language} Language_Setting_Function={Set_Language} References={[Vision_Reference, Services_Reference, Team_Reference, Contact_Us_Reference]}></Header>
-			<div className='Hero_Banner' key='Hero_Banner_Key' ref={Vision_Reference}>
+			<Header Language={Language} Language_Setting_Function={Set_Language} References={[Services_Reference, Team_Reference, Contact_Us_Reference]}></Header>
+			<div className='Hero_Banner' key='Hero_Banner_Key'>
 				<div className='Hero_Banner_Text'>
 					<h1 className='Hero_Banner_Tagline'>{Content.Tagline [Language]}</h1>
 					<p className='Hero_Banner_Description'>al waseet is a F&B and hospitality IT solution that provides seamless dine-in ordering experience for your guests. Focus on your operation, while we take care of your customers' orders.</p>
@@ -106,7 +105,16 @@ const Landing = () =>
 									<QR_Code Restaurant={{Restaurant_ID: '638de2c86c763fe989266e84', Table_ID: 'b50af576-f239-11ec-b939-0242ac120002'}}></QR_Code>
 									<p className='Invitation_to_Scan'>Scan to View the Demo</p>
 								</div>
+								<div className='Menu_Mockup_Container'>
+									<img className='Menu_Mockup' src={Menu_Mockup}></img>
+								</div>
+							</div>
+							<div className='Mobile_Menu_Section'>
+								<h2>Mobile Menu & Ordering</h2>
+								<p>Your customers can scan a QR code, like the one below, and order food straight to their table!</p>
 								<img className='Menu_Mockup' src={Menu_Mockup}></img>
+								<QR_Code Restaurant={{Restaurant_ID: '638de2c86c763fe989266e84', Table_ID: 'b50af576-f239-11ec-b939-0242ac120002'}}></QR_Code>
+								<p className='Invitation_to_Scan'>Scan to View the Demo</p>
 							</div>
 						</Grid>
 					</div>
@@ -144,18 +152,21 @@ const Landing = () =>
 				</div>
 				<div className='Contact_Us' ref={Contact_Us_Reference}>
 					<h1>{Content.Contact_Us_Section_Header [Language]}</h1>
-					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='350px'>
-						<Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
-						<Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_Restaurant (Event.target.value)} Label='Restaurant' Value={Restaurant}></Text_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_City (Event.target.value)} Label='City' Value={City}></Text_Input_Field>
-						<Dropdown_Menu Function={(Event) => Set_Emirate (Event.target.value)} Label='Emirate' Options={['Abu Dhabi', 'Ajman', 'Dubai', 'Fujairah', 'Ras Al Khaimah', 'Sharjah', 'Umm Al Quwain']} Value={Emirate}></Dropdown_Menu>
-					</Grid>
-					<Text_Area Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Function={(Event) => Set_Message (Event.target.value)} Label='Message' Value={Message}></Text_Area>
-					<Button Color='#050505' Classes={['Component_Margin']} Function={Send_an_Email} Text='Send a Message' Text_Color='#FFFFFF'></Button>
-                    {Email_Sent_Status && <p>We will get back to you shortly!</p>}
-                </div>
+					{Email_Sent_Status ? 
+                        <p>We will get back to you shortly!</p>
+                        : 
+                        <>
+                        <Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='300px'>
+                            <Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
+                            <Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
+                            <Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
+                            <Text_Input_Field Function={(Event) => Set_Restaurant (Event.target.value)} Label='Restaurant' Value={Restaurant}></Text_Input_Field>
+                        </Grid>
+                        <Text_Area Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Function={(Event) => Set_Message (Event.target.value)} Label='Message' Value={Message}></Text_Area>
+                        <Button Color='#050505' Classes={['Component_Margin']} Function={Send_an_Email} Text='Send a Message' Text_Color='#FFFFFF'></Button>
+                        </>
+                    }
+				</div>
 			</div>
 			<Footer></Footer>
 			<Floating_Action_Button></Floating_Action_Button>
