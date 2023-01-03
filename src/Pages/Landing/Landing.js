@@ -54,6 +54,7 @@ const Landing = () =>
 		Set_City ('');
 		Set_Emirate ('');
 		Set_Message ('');
+        setTimeout (() => Set_Email_Sent_Status (false), 5000)
 	}
 
 	//const Toggle_Enterprise_Card = () => Set_Enterprise_Plan_Calculation_Status (!Enterprise_Plan_Calculation_Status);
@@ -151,15 +152,20 @@ const Landing = () =>
 				</div>
 				<div className='Contact_Us' ref={Contact_Us_Reference}>
 					<h1>{Content.Contact_Us_Section_Header [Language]}</h1>
-					<Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='300px'>
-						<Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
-						<Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
-						<Text_Input_Field Function={(Event) => Set_Restaurant (Event.target.value)} Label='Restaurant' Value={Restaurant}></Text_Input_Field>
-					</Grid>
-					<Text_Area Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Function={(Event) => Set_Message (Event.target.value)} Label='Message' Value={Message}></Text_Area>
-					<Button Color='#050505' Classes={['Component_Margin']} Function={Send_an_Email} Text='Send a Message' Text_Color='#FFFFFF'></Button>
-					{Email_Sent_Status && <p>We will get back to you shortly!</p>}
+					{Email_Sent_Status ? 
+                        <p>We will get back to you shortly!</p>
+                        : 
+                        <>
+                        <Grid Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Minimum_Column_Width='300px'>
+                            <Text_Input_Field Function={(Event) => Set_Name (Event.target.value)} Label='Name' Value={Name}></Text_Input_Field>
+                            <Text_Input_Field Function={(Event) => Set_Email (Event.target.value)} Label='Email' Value={Email}></Text_Input_Field>
+                            <Phone_Number_Input_Field Phone_Number={Phone_Number} Phone_Number_Code={Phone_Number_Code} Set_Phone_Number={(Event) => Set_Phone_Number (Event.target.value)} Set_Phone_Number_Code={(Event) => Set_Phone_Number_Code (Event.target.value)}></Phone_Number_Input_Field>
+                            <Text_Input_Field Function={(Event) => Set_Restaurant (Event.target.value)} Label='Restaurant' Value={Restaurant}></Text_Input_Field>
+                        </Grid>
+                        <Text_Area Classes={['Component_Padding', 'Component_Fitness_to_Flexbox']} Function={(Event) => Set_Message (Event.target.value)} Label='Message' Value={Message}></Text_Area>
+                        <Button Color='#050505' Classes={['Component_Margin']} Function={Send_an_Email} Text='Send a Message' Text_Color='#FFFFFF'></Button>
+                        </>
+                    }
 				</div>
 			</div>
 			<Footer></Footer>

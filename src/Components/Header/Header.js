@@ -23,9 +23,9 @@ const Header = ({Language, Language_Setting_Function, References}) =>
 					<div className='Section_Link' onClick={() => Scroll_to_the_Section (2)}>Contact Us</div>
 				</nav>
 				<div className='Standalone_Section'>
-					<div className='Language_Selectors'>
+					{/*<div className='Language_Selectors'>
 						<span className={'Language_Selector' + (Language === 'en-US' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('en-US')}>English</span> | <span className={'Language_Selector' + (Language === 'ru' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('ru')}>عربي</span>
-                    </div>
+                    </div>*/}
                     <Button Function={() => window.location.href = `${Configuration.Dashboard_URL}/authentication`} Text='Dashboard'></Button>
 				</div>
 			</header>
@@ -34,9 +34,9 @@ const Header = ({Language, Language_Setting_Function, References}) =>
 				{/*<div className='Section_Link' onClick={() => Scroll_to_the_Section (2)}>Pricing</div>*/}
 				<div className='Section_Link' onClick={() => Scroll_to_the_Section (1)}>Team</div>
 				<div className='Section_Link' onClick={() => Scroll_to_the_Section (2)}>Contact Us</div>
-				<div className='Language_Selectors'>
-					<span className={'Language_Selector' + (Language === 'en-US' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('en-US')}>English</span> | <span className={'Language_Selector' + (Language === 'ru' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('ru')}>عربي</span>
-				</div>
+				{/*<div className='Language_Selectors'>
+						<span className={'Language_Selector' + (Language === 'en-US' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('en-US')}>English</span> | <span className={'Language_Selector' + (Language === 'ru' ? ' Active_Language' : '')} onClick={() => Language_Setting_Function ('ru')}>عربي</span>
+                </div>*/}
 				<Button Function={() => window.location.href = `${Configuration.Dashboard_URL}/authentication`} Text='Dashboard'></Button>
 			</nav>}
 		</>
