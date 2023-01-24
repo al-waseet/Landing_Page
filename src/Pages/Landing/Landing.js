@@ -12,7 +12,6 @@ import Header from '../../Components/Header/Header';
 import './Landing.css';
 import Menu_Mockup from '../../Images/Menu_Mockup.png';
 import Phone_Number_Input_Field from '../../Components/Phone_Number_Input_Field/Phone_Number_Input_Field';
-import Photo_of_Hashim_Noor from '../../Images/Hashim_Noor.jpg';
 import Photo_of_Lev_Rassudov from '../../Images/Lev_Rassudov.jpg';
 import Photo_of_German_Shein from '../../Images/German_Shein.jpg';
 import QR_Code from '../../Components/QR_Code/QR_Code';
@@ -146,7 +145,6 @@ const Landing = () =>
 						<Grid>
 							<Biography Name={Content.Founder_1_Name [Language]} Photo={Photo_of_Lev_Rassudov} Photo_Alternative={Content.Founder_1_Photo_Alternative [Language]} Position={Content.Founder_1_Position [Language]} Text={Content.Founder_1_Biography [Language]}></Biography>
 							<Biography Name={Content.Founder_2_Name [Language]} Photo={Photo_of_German_Shein} Photo_Alternative={Content.Founder_2_Photo_Alternative [Language]} Position={Content.Founder_2_Position [Language]} Text={Content.Founder_2_Biography [Language]}></Biography>
-							<Biography Name={Content.Founder_3_Name [Language]} Photo={Photo_of_Hashim_Noor} Photo_Alternative={Content.Founder_3_Photo_Alternative [Language]} Position={Content.Founder_3_Position [Language]} Text={Content.Founder_3_Biography [Language]}></Biography>
 						</Grid>
 					</div>
 				</div>
